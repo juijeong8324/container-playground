@@ -1,3 +1,3 @@
 FROM nginx
 
-RUN echo hiii > /usr/share/nginx/html
+COPY ./html /usr/share/nginx/html
