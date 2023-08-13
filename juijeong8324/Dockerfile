@@ -1,11 +1,10 @@
-FROM node:latest
-MAINTAINER juijeong8324 juijeong8324@gmail.com
+FROM node:20-alpine3.17
+LABEL name=juijeong8324 email=juijeong8324@gmail.com
 
-RUN mkdir -p /app
 WORKDIR /app
-ADD package*.json /app
+COPY package*.json /app
 RUN npm install --production
-ADD . /app
+COPY . /app
 
 EXPOSE 8080
 CMD ["npm", "start"]

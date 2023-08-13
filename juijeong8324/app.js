@@ -11,7 +11,7 @@ app.set('view engine', 'html');
 // router 설정
 app.use('/', routes);
 
-/* starts a server and listens on port 3000 for connections */
+// starts a server and listens on port 8080 for connections
 app.listen(PORT, (err)=>{
     if(err) return console.log(err);
     console.log(`Server is on ${PORT}`);
