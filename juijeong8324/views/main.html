@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <div style="text-align: center">
+        <h1>정말 아무것도 없는 ddubi's 웹 페이지에 오신 것을 환영합니다.</h1>
+        <img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_1280.jpg" width="500" height=""250>
+        <p>너무 아무것도 없어서 양심상(?) 해당 버튼을 클릭하면 해당 api를 호출하는 처리를 해주었습니다 ^^  </p> 
+        <div>
+            <button onclick="move1()">/api/v1/juijeong8324</button>
+        </div>
+        <div>
+             <button onclick="move2()">/healthcheck</button>
+        </div>
+    </div>
+  
+
+  <script>
+    function move1(){
+        location.href = "/api/v1/juijeong8324";
+    }
+
+    function move2(){
+        location.href = "/healthcheck";
+    }
+  </script>
+</body>
+</html>
